@@ -2,6 +2,10 @@ div:hover {
     border: 2px solid black;
 }
 
+.title {
+    font-family: sans-serif;
+}
+
 #primary {
     background-color: green;
     color: white;
