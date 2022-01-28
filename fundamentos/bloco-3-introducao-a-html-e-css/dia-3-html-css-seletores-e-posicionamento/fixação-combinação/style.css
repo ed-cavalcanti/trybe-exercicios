@@ -1,0 +1,9 @@
+ol li {
+    background-color: lightyellow;
+    text-transform: uppercase;
+}
+
+.par {
+    color: rgb(84, 199, 84);
+    text-transform: none;
+}
