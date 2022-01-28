@@ -6,6 +6,10 @@ div:hover {
     font-family: sans-serif;
 }
 
+.impar {
+    font-style: italic;
+}
+
 #primary {
     background-color: green;
     color: white;
