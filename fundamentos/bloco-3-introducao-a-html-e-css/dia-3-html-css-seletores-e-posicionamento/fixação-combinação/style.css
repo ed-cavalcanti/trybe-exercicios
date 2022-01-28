@@ -7,3 +7,52 @@ ol li {
     color: rgb(84, 199, 84);
     text-transform: none;
 }
+
+h1, h2, h3 {
+    color: rgb(224, 42, 42);
+}
+
+h1,h2,h3 em {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+.blue {
+    color: cornflowerblue;
+}
+
+.java {
+    background-color: palevioletred;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+a#stack:hover {
+    color: peru;
+}
+
+a#w3:hover  {
+    color: green;
+}
+
+a#mdn:hover {
+    color: black;
+}
+
+a#dev:hover {
+    color: rgb(209, 209, 57);
+}
+
+a#trybe:hover {
+    color: rgb(84, 199, 84);
+}
