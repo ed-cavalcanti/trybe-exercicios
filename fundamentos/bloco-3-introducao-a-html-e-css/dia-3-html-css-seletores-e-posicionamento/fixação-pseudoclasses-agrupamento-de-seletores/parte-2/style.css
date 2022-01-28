@@ -1,0 +1,34 @@
+div:hover {
+    border: 2px solid black;
+}
+
+.title {
+    font-family: sans-serif;
+}
+
+.impar {
+    font-style: italic;
+}
+
+#primary {
+    background-color: green;
+    color: white;
+}
+
+#second {
+    background-color: orange;
+}
+
+#complement {
+    background-color: red;
+    padding: 5px;
+}
+
+#dark {
+    background-color: black;
+    color: white;
+}
+
+#light {
+    background-color: lightgray;
+}
