@@ -123,11 +123,24 @@ if (nota >= 90 && nota <= 100) {
 //Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false .
 // Bonus: use somente um if .
 
-const num1 = 10
+const num1 = 7
 const num2 = 5
-const num3 = 3
+const num3 = 42
 
-if (num1 % 2 === 0 || num2 % 2 ===0 || num3 % 2 ===0) {
+if (num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0) {
+    console.log("true")
+} else {
+    console.log("false")
+}
+
+// Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele retorna false .
+// Bonus: use somente um if .
+
+const num1 = 7
+const num2 = 10
+const num3 = 20
+
+if (num1 % 2 !== 0 || num2 % 2 !== 0 || num3 % 2 !== 0) {
     console.log("true")
 } else {
     console.log("false")
