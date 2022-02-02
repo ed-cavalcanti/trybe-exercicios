@@ -19,3 +19,17 @@ if (num1 > num2) {
 } else {
     console.log(num2)
 }
+
+// Retornar o maior de 3 números
+
+const num1 = 18
+const num2 = 50
+const num3 = 102
+
+if (num1 > num2 && num1 > num3) {
+    console.log(num1)
+} else if (num2 > num1 && num2 > num3) {
+    console.log(num2)
+} else {
+    console.log(num3)
+}
