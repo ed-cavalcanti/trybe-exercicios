@@ -49,12 +49,53 @@ if (num > 0) {
 // Faça um programa que defina três constantes com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false , caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.
 
 const angulo1 = 60
-const angulo2 = 60
+const angulo2 = -20
 const angulo3 = 60
 
-if (angulo1 + angulo2 + angulo3 == 180) {
+if (angulo1 + angulo2 + angulo3 == 180 && angulo1 > 0 && angulo2 > 0 && angulo3 > 0) {
     console.log("true");
+} else if (angulo1 < 0) {
+    console.log("erro, valor de angulo não pode ser negativo.")
+} else if (angulo2 < 0) {
+    console.log("erro, valor de angulo não pode ser negativo.")
+} else if (angulo3 < 0) {
+    console.log("erro, valor de angulo não pode ser negativo.")
 } else {
-    console.log("false");
+    console.log("false")
 }
     
+// Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
+// Como desafio, faça o programa funcionar tanto se receber o nome de uma peça com letras maiúsculas quanto com letras minúsculas, sem aumentar a quantidade de condicionais.
+
+let entrada = ("PEÃO")
+let peça = entrada.toLowerCase()
+
+switch (peça) {
+    case "rei":
+        console.log("O rei pode mover-se em todas as direções (horizontal, vertical e diagonal) somente uma casa de cada vez.");
+        break;
+
+    case "rainha":
+        console.log("A rainha move-se ao longo da horizontal, vertical e diagonais mas não pode pular outras peças.");
+        break;
+
+    case "bispo":
+        console.log("O bispo move-se ao longo da diagonal. Não pode pular outras peças.");
+        break;
+
+    case "cavalo":
+        console.log("É a única peça que pode pular as outras. O movimento do cavalo é em forma de “L”, quer dizer, duas casas em sentido horizontal e mais uma na vertical ou vice-versa.");
+        break;
+
+    case "torre":
+        console.log("A torre movimenta-se pela vertical ou horizontal, mas não pode pular outras peças.");
+        break;
+
+    case "peão":
+        console.log("O peão movimenta-se apenas uma casa para frente e somente captura outras peças na diagonal. Opcionalmente, cada peão pode avançar duas casas no seu primeiro movimento do jogo.");
+        break;
+
+        case "peao":
+            console.log("O peão movimenta-se apenas uma casa para frente e somente captura outras peças na diagonal. Opcionalmente, cada peão pode avançar duas casas no seu primeiro movimento do jogo.");
+            break;
+}
