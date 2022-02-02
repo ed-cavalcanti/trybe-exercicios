@@ -136,8 +136,8 @@ if (num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0) {
 // Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele retorna false .
 // Bonus: use somente um if .
 
-const num1 = 7
-const num2 = 10
+const num1 = 30
+const num2 = 187
 const num3 = 20
 
 if (num1 % 2 !== 0 || num2 % 2 !== 0 || num3 % 2 !== 0) {
@@ -145,3 +145,6 @@ if (num1 % 2 !== 0 || num2 % 2 !== 0 || num3 % 2 !== 0) {
 } else {
     console.log("false")
 }
+
+// Escreva um programa que se inicie com dois valores em duas constantes diferentes: o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro (valor de venda descontado o custo do produto) a empresa terá ao vender mil desses produtos.
+// Atente que, sobre o custo do produto, incide um imposto de 20%.
