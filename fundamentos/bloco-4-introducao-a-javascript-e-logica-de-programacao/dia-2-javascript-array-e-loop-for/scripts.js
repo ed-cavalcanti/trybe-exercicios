@@ -96,3 +96,9 @@ for (let index = 1; index < numbers.length; index += 1) {
 }
 
 console.log(menor);
+
+// Utilizando for , crie um array que vá de 1 até 25 e imprima o resultado;
+
+for (let contador = 1; contador <= 25; contador += 1) {
+    console.log(contador)
+}
