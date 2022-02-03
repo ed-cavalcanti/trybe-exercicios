@@ -79,4 +79,20 @@ for (let index = 0; index < numbers.length; index += 1) {
     }
 }
 
-console.log(impar)
+console.log(impar);
+
+// Utilizando for , descubra qual o menor valor contido no array e imprima-o;
+
+let numbers = [10, 9, 3, 19, 70, 8, 100, 20, 35, 27];
+
+let menor = numbers[0];
+
+for (let index = 1; index < numbers.length; index += 1) {
+    if (numbers[index] < menor && numbers[index] != 0) {
+        menor = numbers[index];
+    } else {
+        menor = menor;
+    }
+}
+
+console.log(menor);
