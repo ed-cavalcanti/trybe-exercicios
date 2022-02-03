@@ -49,19 +49,15 @@ if (num > 0) {
 // Faça um programa que defina três constantes com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false , caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.
 
 const angulo1 = 60
-const angulo2 = -20
+const angulo2 = 60
 const angulo3 = 60
 
 if (angulo1 + angulo2 + angulo3 == 180 && angulo1 > 0 && angulo2 > 0 && angulo3 > 0) {
     console.log("true");
-} else if (angulo1 < 0) {
-    console.log("erro, valor de angulo não pode ser negativo.")
-} else if (angulo2 < 0) {
-    console.log("erro, valor de angulo não pode ser negativo.")
-} else if (angulo3 < 0) {
-    console.log("erro, valor de angulo não pode ser negativo.")
+} else if (angulo1 < 0 || angulo2 < 0 || angulo3 < 0) {
+    console.log("erro, valor de angulo não pode ser negativo.");
 } else {
-    console.log("false")
+    console.log("false");
 }
     
 // Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
@@ -148,3 +144,15 @@ if (num1 % 2 !== 0 || num2 % 2 !== 0 || num3 % 2 !== 0) {
 
 // Escreva um programa que se inicie com dois valores em duas constantes diferentes: o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro (valor de venda descontado o custo do produto) a empresa terá ao vender mil desses produtos.
 // Atente que, sobre o custo do produto, incide um imposto de 20%.
+
+
+let valorCusto = 10
+let valorCustoTotal = 10 * 1.2
+let valorVenda = 18
+let lucro = valorVenda - valorCustoTotal
+
+if (valorCusto < 0 || valorVenda < 0) {
+    console.log("erro");
+} else {
+    console.log(lucro * 1000)
+}
