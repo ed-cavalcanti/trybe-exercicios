@@ -89,3 +89,15 @@ let n = 5;
 for (let contador = 1; contador <= n; contador += 1) {
     console.log("*".repeat(contador));
 }
+
+// Agora inverta o lado do triângulo.
+// Ainda sem resolução
+
+let n = 5;
+
+for (let contador = 1; contador <= n; contador += 1) {
+    for (let contador2 = n; contador2 == 1; contador2 -= 1) {
+        console.log("   ".repeat(contador2 - 1));
+    }
+    console.log("*".repeat(contador));
+}
