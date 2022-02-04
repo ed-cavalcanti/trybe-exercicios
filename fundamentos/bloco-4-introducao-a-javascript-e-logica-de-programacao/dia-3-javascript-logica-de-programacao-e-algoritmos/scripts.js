@@ -10,3 +10,15 @@ for (let index = 1; index < fatorial.length; index += 1) {
 console.log(soma);
 
 // Agora, desenvolva um algoritmo que é capaz de inverter uma palavra. Por exemplo, a palavra "banana" seria invertida para "ananab"
+
+let word = "tryber";
+let arrayWord = Array.from(word);
+
+let inverter = [];
+
+for (index = arrayWord.length - 1; index >= 0; index--) {
+    inverter.push(arrayWord[index]);
+}
+
+console.log(inverter);
+
