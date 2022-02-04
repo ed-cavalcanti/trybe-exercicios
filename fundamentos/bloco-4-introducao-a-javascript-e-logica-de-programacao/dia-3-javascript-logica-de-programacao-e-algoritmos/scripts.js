@@ -43,3 +43,29 @@ for (index = 0; index < array.length; index += 1) {
 
 console.log("A maior palavra é: " + maior + "e a menor palavra é: " + menor);
 
+// Um número primo é aquele divisível apenas por 1 e por ele mesmo. Sabendo disso, escreva um algoritmo que retorne o maior número primo entre 0 e 50
+
+let numeros = [];
+
+for (let contador = 0; contador <= 50; contador += 1) {
+    numeros.push(contador);
+}
+
+let maior = 0;
+
+for (let numero = 2; numero < numeros.length; numero += 1) {
+    let primo = true;
+
+    for (let divisor = 2; divisor < numero; divisor += 1) {
+        if (numero % divisor === 0) {
+            primo = false;
+            break;
+        }
+    }
+
+    if (primo) {
+        maior = numero;
+    }
+}
+
+console.log(maior);
