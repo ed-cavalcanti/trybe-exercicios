@@ -28,3 +28,11 @@ document.querySelector('.center-content').appendChild(paragrafo);
 let leftSection = document.createElement('section');
 leftSection.classList.add('left-content');
 document.querySelector('.main-content').appendChild(leftSection);
+
+// Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+
+let rightSection = document.createElement('section');
+rightSection.classList.add('right-content');
+document.querySelector('.main-content').appendChild(rightSection);
+
+//
