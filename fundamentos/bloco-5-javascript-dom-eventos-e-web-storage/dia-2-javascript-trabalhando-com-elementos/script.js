@@ -56,3 +56,16 @@ for (let index = 0; index < listItem.length; index += 1) {
     listLi.innerText = listItem[index];
     rightContent.appendChild(listLi);
 }
+
+// Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+
+for (index2 = 0; index2 < 3; index2 += 1) {
+    let titulo3 = document.createElement('h3');
+    titulo3.innerText = 'Subtítulo';
+    document.querySelector('.main-content').appendChild(titulo3);
+}
+
+//
+
+
+
