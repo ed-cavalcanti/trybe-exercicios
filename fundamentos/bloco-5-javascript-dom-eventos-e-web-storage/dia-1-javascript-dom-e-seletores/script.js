@@ -3,7 +3,6 @@ Aqui você vai modificar os elementos já existentes utilizando apenas as funç�
 - document.getElementById()
 - document.getElementsByClassName()
 - document.getElementsByTagName()
- Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
 */
 
@@ -22,3 +21,5 @@ document.getElementsByClassName("center-content")[0].style.backgroundColor = "wh
 // Crie uma função que corrija o texto da tag <h1>.
 
 document.getElementsByClassName("title")[0].innerText = "Exercício 5.1 - JavaScript";
+
+// Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
