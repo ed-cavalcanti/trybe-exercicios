@@ -65,7 +65,16 @@ for (index2 = 0; index2 < 3; index2 += 1) {
     document.querySelector('.main-content').appendChild(titulo3);
 }
 
-//
+// Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
+// Adicione a classe title na tag h1 criada;
+titulo.classList.add('title');
 
+// Adicione a classe description nas 3 tags h3 criadas;
+for (index3 = 3; index3 < 7; index3 += 1) {
+    let local = document.querySelector('.main-content').children[index3];
+    local.classList.add('description');
+}
 
+// Remova a section criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
 
+document.querySelector('.main-content')[1].removeChild;
