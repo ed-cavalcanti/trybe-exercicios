@@ -7,6 +7,38 @@
         <title>TrybeTrip</title>
     </head>
     <body>
-        
+        <fieldset id="form">
+            <form action="">
+                <label for="name-input">Nome: </label>
+                <input type="text" name="name" id="name-input" minlength="10" maxlength="10"><br><br>
+    
+                <label for="email-input">E-mail: </label>
+                <input type="text" name="email" id="email-input"><br><br>
+    
+                <p>Destino preferido:</p>
+                <label><input type="radio" name="cidade">Cidade</label>
+                <label><input type="radio" name="cidade">Campo</label>
+                <label><input type="radio" name="cidade">Praia</label>
+                <label><input type="radio" name="cidade">Montanha</label>
+    
+                <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+                <textarea name="text" id="text-input" cols="60" rows="20" maxlength="500"></textarea>
+    
+                <p>Qual a melhor data para realizar sua viagem?</p>
+                <input type="date" name="traveldate" id="data-input"><br>
+    
+                <input type="checkbox" name="opcional" id="option1"><label for="option1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label><br>
+                <input type="checkbox" name="opcional" id="option1"><label for="option1">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label><br><br><br>
+    
+                <button type="submit" id="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </fieldset>
+        <script>
+            const sendButton =  document.getElementById('submit');
+            sendButton.addEventListener('click', function(event){
+                event.preventDefault();
+            })
+        </script>
     </body>
 </html>
