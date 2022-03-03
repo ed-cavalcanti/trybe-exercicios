@@ -31,3 +31,17 @@ const nFatorial = (n) => {
 }
 
 console.log(nFatorial(4));
+
+// Crie uma função que receba uma frase e retorne qual a maior palavra.
+
+const maiorPalavra = (frase) => {
+  let maior = '';
+  frase.split(" ").forEach(palavra => {
+    if (palavra.trim().length > maior.length) {
+      maior = palavra.trim();
+    }
+  })
+  return maior;
+}
+
+console.log(maiorPalavra('Antônio foi no banheiro e não sabemos o que aconteceu'));
