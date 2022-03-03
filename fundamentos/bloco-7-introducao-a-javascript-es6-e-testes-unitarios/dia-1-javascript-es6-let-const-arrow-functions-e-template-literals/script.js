@@ -58,3 +58,23 @@ button.addEventListener('click', () => {
   contador += 1;
   p.innerHTML = contador;
 });
+
+// Escreva uma função que vai receber uma string como parâmetro. Sua função deverá procurar pela letra x em uma string qualquer que você determinar e substituir pela string que você passou como parâmetro. Sua função deve retornar essa nova string .
+// Exemplo:
+// String determinada: "Nome x aqui!"
+// Parâmetro: "Samuel"
+// Retorno: "Nome Samuel aqui!"
+
+const findX = (string, nome) => {
+  let text = '';
+  for (let index = 0; index < string.length; index += 1) {
+    if (string[index] !== 'x') {
+      text += string[index];
+    } else {
+      text += nome;
+    }
+  }
+  return text;
+}
+
+console.log(findX('Nome x aqui', 'Samuel'));
