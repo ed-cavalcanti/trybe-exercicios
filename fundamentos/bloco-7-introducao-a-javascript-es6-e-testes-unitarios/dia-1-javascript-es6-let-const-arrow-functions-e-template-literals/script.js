@@ -45,3 +45,16 @@ const maiorPalavra = (frase) => {
 }
 
 console.log(maiorPalavra('Antônio foi no banheiro e não sabemos o que aconteceu'));
+
+// Crie uma página que contenha:
+// Um botão ao qual será associado um event listener ;
+// Uma variável clickCount no arquivo JavaScript que acumule o número de clicks no botão;
+// Um campo no HTML que vá atualizando a quantidade de clicks no botão conforme a variável clickCount é atualizada.
+let contador = 0;
+let p = document.querySelector('#contador')
+
+const button = document.querySelector('#click');
+button.addEventListener('click', () => {
+  contador += 1;
+  p.innerHTML = contador;
+});
