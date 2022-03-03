@@ -1,6 +1,4 @@
-// Modifique a estrutura da função para que ela seja uma arrow function .
-// Modifique as concatenações para template literals .
-
+// modificar função para usar arrow functions e templte strings
 const testingScope = (escopo) => {
   if (escopo === true) {
     let ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
@@ -14,10 +12,7 @@ const testingScope = (escopo) => {
 
 testingScope(true);
 
-// Faça uma função que retorne o array oddsAndEvens em ordem crescente.
-// Utilize template literals para que a chamada console.log(<seu código>oddsAndEvens<seu código>); retorne "Os números 2,3,4,7,10,13 se encontram ordenados de forma crescente!".
-// Bônus (opcional): tente fazer o mesmo exercício utilizando o método array.sort() . Spoiler: É possível realizar uma função que ordene qualquer array de números.
-
+// Mosttre na tela os números em ordem crescente
 const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 
 const ordemNumerica = (array) => {
@@ -25,3 +20,14 @@ const ordemNumerica = (array) => {
 }
 
 console.log(`${ordemNumerica(oddsAndEvens)} se encontram ordenados de forma crescente!`);
+
+// Crie uma função que receba um número e retorne seu fatorial.
+const nFatorial = (n) => {
+  let fatorial = 0;
+  for (let index = 0; index < n; index += 1) {
+    fatorial += n * index;
+  }
+  return fatorial;
+}
+
+console.log(nFatorial(4));
