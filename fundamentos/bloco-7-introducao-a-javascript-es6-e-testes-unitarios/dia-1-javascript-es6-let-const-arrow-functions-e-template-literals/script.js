@@ -77,4 +77,22 @@ const findX = (string, nome) => {
   return text;
 }
 
-console.log(findX('Nome x aqui', 'Samuel'));
+// console.log(findX('Nome x aqui', 'Samuel'));
+
+//Um array com escopo global, que é o escopo do arquivo JS , nesse caso, contendo cinco strings com suas principais skills .
+
+let skills = ['GitHub', 'Linux', 'HTML', 'CSS', 'JavaScript'];
+
+// Escreva uma função que vai receber a string retornada da Função 1 como parâmetro. Essa função deve concatenar as skills do array global à string que foi passada para a Função 2 via parâmetro. Você deve ordenar os skills em ordem alfabética. Sua função deve retornar essa nova string .
+// Exemplo: "Nome x aqui! Minhas cinco principais habilidades são:
+// JavaScript;
+// HTML; ...".
+
+const skillsShare = (frase1, skills1) => {
+  console.log(`${frase1}! Minhas cinco principais habilidades são: `);
+  for (let index = 0; index < skills1.length; index += 1) {
+    console.log(skills1[index]);
+  }
+}
+
+skillsShare(findX('Nome x aqui', 'Samuel'), skills);
