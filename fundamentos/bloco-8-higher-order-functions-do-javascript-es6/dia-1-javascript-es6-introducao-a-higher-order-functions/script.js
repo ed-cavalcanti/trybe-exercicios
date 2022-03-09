@@ -41,3 +41,21 @@ function verifyAnswers (corretsAnswers, studentAnswers) {
 };
 
 console.log(answers(RIGHT_ANSWERS, STUDENT_ANSWERS, verifyAnswers));
+
+// Desenvolva uma HOF que retorna o resultado de um sorteio.
+
+function verifyWins(numberBet) {
+  if (typeof numberBet === 'string' || numberBet > 5) {
+    return 'Número inválido!';
+  }
+  const sorty = Math.floor(Math.random() * 6);
+  if (sorty === numberBet) {
+    return 'Parabéns, você ganhou!';
+  } else {
+    return 'Tente novamente!';
+  }
+}
+
+const prizeDraw = (numberBet, callback) => callback(numberBet);
+
+console.log(prizeDraw(3, verifyWins));
