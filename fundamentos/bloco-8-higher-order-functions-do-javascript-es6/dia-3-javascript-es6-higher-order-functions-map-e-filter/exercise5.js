@@ -61,10 +61,8 @@ const books = [
   },
 ];
 
-//  Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho.
+// rie um array em ordem alfabética apenas com os nomes de todas as pessoas autoras de ficção científica ou fantasia.
 
-function oldBooksOrdered() {
-  return books.filter((book) => book.releaseYear <= 1962).sort((a, b) => a.releaseYear - b.releaseYear);
+function fantasyOrScienceFictionAuthors() {
+  // escreva seu código aqui
 }
-
-console.log(oldBooksOrdered());
